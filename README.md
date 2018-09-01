@@ -1,2 +1,2 @@
-# algaeorks-financeiro
+# Algaworks-financeiro
 E-book Java EE Algaworks 2a ed
