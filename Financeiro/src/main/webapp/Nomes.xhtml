@@ -5,8 +5,8 @@
 	</h:head>
 	<h:body>
 		<h:form>
-			Nome: <h:inputText value="#{nomesBean.nome}"/><br/><br/>
-			<h:commandButton value="Adicionar" action="#{nomesBean.adicionar}"></h:commandButton>
+			Nome: <h:inputText value="#{nomesBean.nome}" binding="#{nomesBean.inputNome}"/><br/><br/>
+			<h:commandButton value="Adicionar" action="#{nomesBean.adicionar}" binding="#{nomesBean.botaoAdicionar}"/>
 			<ol>
 				<ui:repeat var="nome" value="#{nomesBean.nomes}">
 					<li>#{nome}</li>
