@@ -5,7 +5,7 @@
 	</h:head>
 	<h:body>
 		<h:form>
-			Nome: <h:inputText value="#{nomesBean.nome}" binding="#{nomesBean.inputNome}"/><br/><br/>
+			Nome: <h:inputText id="nomes" value="#{nomesBean.nome}" binding="#{nomesBean.inputNome}"/><br/><br/>
 			<h:commandButton value="Adicionar" action="#{nomesBean.adicionar}" binding="#{nomesBean.botaoAdicionar}"/>
 			<ol>
 				<ui:repeat var="nome" value="#{nomesBean.nomes}">
@@ -14,4 +14,5 @@
 			</ol>
 		</h:form>
 	</h:body>
+	
 </html>
